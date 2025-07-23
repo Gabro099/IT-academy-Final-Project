@@ -1,0 +1,999 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header start */
+
+.topArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 70px;
+}
+
+.topArea input {
+  border: none;
+  border-bottom: 1px solid #bc4c2a;
+  outline: none;
+  height: 45px;
+  padding-left: 20px;
+}
+
+.topArea input::placeholder {
+  color: #bc4c2a;
+}
+
+.topArea h1 {
+  color: #bc4c2a;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.searchBar {
+  position: relative;
+}
+
+.searchBar i {
+  position: absolute;
+  bottom: 15px;
+  color: #bc4c2a;
+}
+
+.rightSide {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rightSide i {
+  color: #bc4c2a;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+
+/* header ended */
+
+
+.banner {
+    height: 600px;
+    background-image: url("banner.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #a8a8a85f;
+    background: linear-gradient(0deg, rgba(168, 168, 168, 0.5) 0%, rgba(82, 82, 82, 0.7) 50%, rgba(0, 0, 0, 0.8) 100%);
+    
+}
+
+
+.banner .texts {
+    text-align: center;
+    z-index: 1;
+}
+
+.texts h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.texts button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* მეორე სათაური */
+
+.title-container {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 7px;
+  margin: 30px;
+
+}
+
+.underline {
+  width: 30px;
+  height: 2px;
+  margin: 10px auto 0;
+  background-color: black;
+}
+
+/* ქარდები  თავის ბათონით */
+
+.Card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  flex: 0 0 auto;
+}
+
+.badge {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #BC4C2A;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.qvedamxare {
+  text-align: center;
+}
+
+.Product-name {
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.Product-Price {
+  color: #bc4c2a;
+  font-style: italic;
+}
+
+/* shop all bag button */
+
+.shopallbag {
+  padding: 16px 32px;
+  border: 1px solid #b0431e; 
+  background-color: transparent;
+  color: #b0431e;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.shopallbag:hover {
+  background-color: #b0431e;
+  color: white;
+}
+
+.shopallbagcontainer{
+  text-align: center;
+  margin: 100px;
+}
+
+/* საფულე */
+.safulecontainer{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* leftside */
+
+.leftsafule {
+  flex: 1;
+  background-color: #f9f6f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftsafule img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.viewdetails {
+  padding: 16px 32px;
+  font-size: 18px;
+  color: #b0431e;
+  border: 1px solid #b0431e;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewdetails:hover {
+  background-color: #f8eae4;
+}
+
+/* rightside */
+
+.rightsafule {
+  flex: 1;
+  background: url('./safule2.avif') no-repeat center center / cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;  
+}
+
+
+.overlaytext {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
+
+
+
+/* ქამარი */
+
+.qamaricontainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.leftqamari {
+  flex: 1;
+  background: url('./belt\ marcxena.avif') no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.LEATHERBELTS {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
+
+
+.rightqamari {
+  flex: 1;
+  background-color: #f9f6f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightqamari img {
+  width: 350px;
+  margin-bottom: 40px;
+}
+
+.viewdetailsqamari {
+  padding: 16px 32px;
+  font-size: 18px;
+  color: #b0431e;
+  border: 1px solid #b0431e;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewdetailsqamari:hover {
+  background-color: #f8eae4;
+}
+
+/* სამიანი */
+
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 40px;
+}
+
+.feature-box {
+  width: 400px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  text-align: left;
+  padding: 30px;
+}
+
+.text {
+  background: rgba(0, 0, 0, 0.3); 
+  padding: 20px;
+}
+
+
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+
+/* 5 iani */
+
+.instagram-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.instagramheader h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  
+}
+
+.handle {
+  color: #b0431e;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  
+}
+
+.image-row img {
+  width: 16.66%; 
+  object-fit: cover;
+  height: 300px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  text-align: center;
+  color: #b0431e;
+}
+
+.info-box .dash {
+  width: 10px;
+  height: 2px;
+  background-color: #b0431e;
+  margin: 0 auto 10px;
+}
+
+.info-box p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+  padding: 60px 40px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #111;
+  cursor: pointer;
+}
+
+.logo h1 {
+  font-family: serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #b0431e;
+}
+
+.logo span {
+  color: #b0431e;
+}
+
+.subscribe h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscribe label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.subscribe input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #b0431e;
+  padding: 8px 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  outline: none;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #b0431e;
+}
+
+.checkbox-wrapper label {
+  font-size: 14px;
+  color: #111;
+}
+
+.subscribe button {
+  padding: 12px 28px;
+  border: 1px solid #b0431e;
+  background-color: transparent;
+  color: #b0431e;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #f8eae4;
+}
+
+
+/* shop all page */
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+}
+
+/* საიდბარი */
+
+.shopallcontainer {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+
+
+.sidebar {
+  width: 220px;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.nav li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav li.active {
+  font-weight: bold;
+}
+
+.filters h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 30px;
+}
+
+.filter-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/* giftcard */
+
+.giftcard-container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.giftcard-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.giftcard-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.price-display {
+  font-style: italic;
+  color: #b0431e;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+
+
+.amount-options button,
+.recipient-options button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.amount-options .active,
+.recipient-options .active {
+  border: 1px solid #b0431e;
+  color: #b0431e;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: 1px solid #111;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gift-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gift-form input,
+.gift-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #111;
+  width: 100%;
+}
+
+.buy-button {
+  background-color: #b0431e;
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition:  0.3s;
+  margin-bottom: 100px;
+}
+
+.buy-button:hover {
+  background-color: #8e2e11;
+}
+
+
+/* responsivi tableti 768px */
+@media (max-width: 768px) {
+  .topArea {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .topArea h1 {
+    font-size: 30px;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shopallcontainer,
+  .giftcard-container,
+  .safulecontainer,
+  .qamaricontainer,
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .giftcard-image img,
+  .rightqamari img,
+  .leftsafule img {
+    width: 80%;
+  }
+
+  .feature-box {
+    width: 100%;
+    height: 300px;
+  }
+
+  .image-row img {
+    width: 48%;
+    height: 200px;
+  }
+
+  .info-row {
+    gap: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .giftcard-details {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .amount-options,
+  .recipient-options {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+ 
+/* amit pirvel gverdze gasworda chantebis sia */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+    height: auto;
+  }
+
+  .Product-name,
+  .Product-Price {
+    font-size: 14px;
+  }
+}
+
+/* safule */
+@media (max-width: 768px) {
+  .rightsafule {
+    background-attachment: scroll; 
+    min-height: 300px;
+    padding: 40px 20px;
+  }
+
+  .overlaytext {
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-bottom-width: 2px;
+  }
+}
+
+/* ქამარი */
+
+@media (max-width: 768px) {
+  .qamaricontainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftqamari {
+    height: 300px;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 20px;
+  }
+
+  .LEATHERBELTS {
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-bottom-width: 2px;
+    text-align: center;
+  }
+
+  .rightqamari img {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  .viewdetailsqamari {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+
+
+
+
+/* mobile 425px */
+
+@media (max-width: 425px) {
+  .topArea {
+    padding: 10px;
+  }
+
+  .topArea h1 {
+    font-size: 26px;
+  }
+
+  .searchBar input {
+    width: 100%;
+  }
+
+  .banner .texts h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .texts button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .image-row img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .giftcard-image img {
+    width: 100%;
+  }
+
+  .giftcard-details {
+    padding: 0 10px;
+  }
+
+  .gift-form input,
+  .gift-form textarea {
+    font-size: 14px;
+  }
+
+  .amount-options button,
+  .recipient-options button {
+    flex: 1 1 45%;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .quantity-selector {
+    gap: 10px;
+  }
+
+  .buy-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+/* amit pirvel gverdze gasworda chantebis sia */
+@media (max-width: 425px) {
+  .Card-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .Product-name,
+  .Product-Price {
+    font-size: 15px;
+  }
+}
+
+/* safule */
+@media (max-width: 425px) {
+  .rightsafule {
+    min-height: 250px;
+    padding: 30px 15px;
+    background-position: center center;
+  }
+
+  .overlaytext {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
+/* ქამარი */
+@media (max-width: 425px) {
+  .leftqamari {
+    height: 250px;
+    padding: 30px 15px;
+  }
+
+  .LEATHERBELTS {
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-bottom-width: 1px;
+  }
+
+  .rightqamari img {
+    width: 80%;
+  }
+
+  .viewdetailsqamari {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

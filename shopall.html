@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <header>
+      <div class="topArea">
+        <div class="searchBar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search..." />
+        </div>
+
+        <a href="./index.html"><h1>adalene.</h1></a>
+        <div class="rightSide">
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <p><i class="fa-solid fa-user"></i> Log In</p>
+          <p>Cart (0)</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="./shopall.html">Shop All</a></li>
+        <li><a href="">Our Story</a></li>
+        <li><a href="">Our Craft</a></li>
+        <li><a href="./giftcard.html">Gift Card</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </header>
+
+    <h1 class="page-title">All Products</h1>
+
+    <div class="shopallcontainer">
+        <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="nav">
+        <li class="active">All Products</li>
+        <li>Bags</li>
+        <li>Best Sellers</li>
+        <li>Leather Belts</li>
+        <li>Mini Leather Goods</li>
+        <li>Phone Cases</li>
+      </ul>
+
+      <div class="filters">
+        <h3>Filter by</h3>
+        <div class="filter-group">
+          <label class="filter-label">Price <span>−</span></label>
+          <input type="range" min="25" max="400">
+          <div class="price-range">
+            <span>$25</span>
+            <span>$400</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Model <span>+</span></label>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Size <span>+</span></label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- product -->
+        <div class="card">
+          <div class="badge">Best Seller</div>
+          <div class="zedamxare">
+            <img src="./Bag-$400.avif" alt="">
+          </div>
+          <div class="qvedamxare">
+            <div class="Product-name">I'm a product</div>
+            <div class="Product-Price">$400.00</div>
+          </div>          
+        </div>
+
+        <div class="card">
+          <div class="badge">Best Seller</div>
+          <div class="zedamxare">
+            <img src="./Bag-$400.avif" alt="">
+          </div>
+          <div class="qvedamxare">
+            <div class="Product-name">I'm a product</div>
+            <div class="Product-Price">$400.00</div>
+          </div>          
+        </div>
+
+        <div class="card">
+          <div class="badge">Best Seller</div>
+          <div class="zedamxare">
+            <img src="./Bag-$400.avif" alt="">
+          </div>
+          <div class="qvedamxare">
+            <div class="Product-name">I'm a product</div>
+            <div class="Product-Price">$400.00</div>
+          </div>          
+        </div>
+    </div>
+    
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-container">
+      <!-- Brand -->
+      <div class="footer-column logo">
+        <h1>adalene<span>.</span></h1>
+      </div>
+
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <ul>
+          <li>Shop All</li>
+          <li>Our Story</li>
+          <li>Our Craft</li>
+          <li>Gift Card</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <ul>
+          <li>FAQ</li>
+          <li>Shipping & Returns</li>
+          <li>Store Policy</li>
+          <li>Payment Methods</li>
+          <li>Stockists</li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Pinterest</li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-column subscribe">
+        <h2>JOIN US!</h2>
+        <form>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Yes, subscribe me<br>to your newsletter. *</label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+    
+</body>
+</html>
