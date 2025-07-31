@@ -735,6 +735,7 @@ input[type="range"] {
   header ul {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
   }
 
   .shopallcontainer,
@@ -810,6 +811,7 @@ input[type="range"] {
     background-attachment: scroll; 
     min-height: 300px;
     padding: 40px 20px;
+    width: 100%;
   }
 
   .overlaytext {
@@ -833,6 +835,8 @@ input[type="range"] {
     background-position: center;
     background-size: cover;
     padding: 40px 20px;
+    width: 100%;
+    margin-top: 15px;
   }
 
   .LEATHERBELTS {
@@ -843,13 +847,15 @@ input[type="range"] {
   }
 
   .rightqamari img {
-    width: 60%;
-    max-width: 300px;
+    width: 100%;
+    /* max-width: 300px; */
+    margin: 50px;
   }
 
   .viewdetailsqamari {
     font-size: 16px;
     padding: 12px 24px;
+    margin-bottom: 50px
   }
 }
 
@@ -965,6 +971,7 @@ input[type="range"] {
     min-height: 250px;
     padding: 30px 15px;
     background-position: center center;
+    width: 100%;
   }
 
   .overlaytext {
@@ -980,20 +987,25 @@ input[type="range"] {
   .leftqamari {
     height: 250px;
     padding: 30px 15px;
+    width: 100%;
+    margin-top: 15px;
   }
 
   .LEATHERBELTS {
     font-size: 16px;
     letter-spacing: 1px;
     border-bottom-width: 1px;
+    
   }
 
   .rightqamari img {
-    width: 80%;
+    width: 100%;
+    margin: 50px;
   }
 
   .viewdetailsqamari {
     font-size: 14px;
     padding: 10px 20px;
+    margin-bottom: 50px;
   }
 }
